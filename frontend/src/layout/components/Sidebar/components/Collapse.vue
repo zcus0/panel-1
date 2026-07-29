@@ -37,43 +37,7 @@
                     {{ $t('menu.msgCenter') }}
                     <el-tag class="msg-tag" v-if="taskCount !== 0" size="small" round>{{ taskCount }}</el-tag>
                 </div>
-                <el-divider v-if="showNodes()" class="divider" />
-                <div class="dropdown-item" @click="openNodeDashboard" v-if="isXpackOrEE">
-                    <SvgIcon class="icon" iconName="p-gailan1" />
-                    {{ $t('xpack.node.multiOverview') }}
-                </div>
-                <el-divider v-if="isXpackOrEE" class="divider" />
-
-                <div v-if="showNodes()">
-                    <el-scrollbar max-height="288px" :noresize="true">
-                        <div
-                            class="dropdown-item"
-                            @click="changeNode(item.name)"
-                            :disabled="item.status !== 'Healthy'"
-                            v-for="item in visibleNodeOptions"
-                            :key="item.name"
-                        >
-                            <SvgIcon class="icon" iconName="p-zhuji" />
-                            <span class="node-name">{{ displayNodeName(item) }}</span>
-                            <el-tooltip
-                                v-if="item.status !== 'Healthy' || !item.isBound"
-                                :content="item.isBound ? $t('xpack.node.nodeUnhealthy') : $t('xpack.node.nodeUnbind')"
-                                placement="right"
-                            >
-                                <el-icon class="icon-status" type="danger">
-                                    <Warning />
-                                </el-icon>
-                            </el-tooltip>
-                        </div>
-                    </el-scrollbar>
-                    <div v-if="showMoreNodes" class="dropdown-item more-node-button" @click.stop="openNodeDrawer">
-                        <span class="more-node-label">{{ $t('tabs.more') }}</span>
-                        <span class="more-node-count">+{{ nodeOptions.length - defaultNodeLimit }}</span>
-                        <el-icon class="more-node-arrow">
-                            <ArrowRight />
-                        </el-icon>
-                    </div>
-                </div>
+                <!-- Multi-Machine items hidden: xpack routes not in OSS build -->
                 <el-divider class="divider" />
                 <div class="dropdown-item" @click="logout">
                     <SvgIcon class="icon" iconName="p-tuichudenglu3" />

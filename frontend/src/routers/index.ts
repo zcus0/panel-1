@@ -114,11 +114,15 @@ router.beforeEach(async (to, from) => {
         cachedRoute !== to.path &&
         !isRedirecting
     ) {
-        const cachedRouteInfo = router.resolve(cachedRoute);
-        if (cachedRouteInfo.matched.length > 0 && hasRouteAccess(cachedRouteInfo)) {
-            isRedirecting = true;
-            NProgress.done();
-            return cachedRoute;
+        try {
+            const cachedRouteInfo = router.resolve(cachedRoute);
+            if (cachedRouteInfo.matched.length > 0 && hasRouteAccess(cachedRouteInfo)) {
+                isRedirecting = true;
+                NProgress.done();
+                return cachedRoute;
+            }
+        } catch (e) {
+            // Cached route doesn't exist in OSS build, clear it
         }
         localStorage.removeItem(activeMenuKey);
     }
