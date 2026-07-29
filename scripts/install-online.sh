@@ -3,7 +3,8 @@ set -e
 
 # ============================================
 # 1Panel OSS Edition - One-line installer
-# Usage: bash <(curl -sSL https://raw.githubusercontent.com/YOUR_USER/1panel-oss/main/scripts/install-online.sh)
+# Usage: curl -sSL https://raw.githubusercontent.com/zcus0/panel-1/dev-v2/scripts/install-online.sh | bash
+# Or:    wget -qO- https://raw.githubusercontent.com/zcus0/panel-1/dev-v2/scripts/install-online.sh | bash
 # ============================================
 
 GITHUB_REPO="zcus0/panel-1"  # Ganti dengan repo kamu
