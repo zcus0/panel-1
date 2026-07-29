@@ -137,6 +137,22 @@ WorkingDirectory=/opt/1panel
 WantedBy=multi-user.target
 UNIT
 
+# Create /usr/local/bin/1pctl config file (key=value format read by binaries)
+if [[ ! -f /usr/local/bin/1pctl ]]; then
+    cat > /usr/local/bin/1pctl << 'CTLCONF'
+BASE_DIR=/opt/1panel
+LANGUAGE=en
+ORIGINAL_PORT=9999
+ORIGINAL_VERSION=2.0.0
+ORIGINAL_USERNAME=admin
+ORIGINAL_PASSWORD=
+ORIGINAL_ENTRANCE=
+PANEL_EDITION=oss
+CTLCONF
+    chmod 644 /usr/local/bin/1pctl
+    log_info "Created 1pctl config"
+fi
+
 # Reload and enable services
 systemctl daemon-reload
 systemctl enable 1panel-core 1panel-agent
