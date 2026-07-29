@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.23'
+          cache: true
 
       - name: Build Frontend
         working-directory: frontend
@@ -32,6 +33,7 @@ jobs:
 
       - name: Build Core
         working-directory: core
+        timeout-minutes: 30
         env:
           GOOS: linux
           GOARCH: ${{ matrix.arch }}
@@ -40,6 +42,7 @@ jobs:
 
       - name: Build Agent
         working-directory: agent
+        timeout-minutes: 30
         env:
           GOOS: linux
           GOARCH: ${{ matrix.arch }}
@@ -49,7 +52,7 @@ jobs:
       - name: Package
         run: |
           VERSION=${GITHUB_REF#refs/tags/}
-          DIST="1panel-${VERSION}-linux-${matrix.arch}"
+          DIST="1panel-${VERSION}-linux-${{ matrix.arch }}"
           mkdir -p "${DIST}"
 
           # Binaries
