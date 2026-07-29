@@ -57,12 +57,15 @@ fi
 
 # Create directories
 mkdir -p "${PANEL_CONF_DIR}/conf"
+mkdir -p "${PANEL_CONF_DIR}/log"
 mkdir -p "${PANEL_LOG_DIR}"
 mkdir -p "${PANEL_CONF_DIR}/database"
 mkdir -p "${PANEL_CONF_DIR}/cert"
 mkdir -p "${PANEL_CONF_DIR}/tmp"
 mkdir -p "${PANEL_CONF_DIR}/ssh"
 mkdir -p "${PANEL_CONF_DIR}/firewall"
+mkdir -p /etc/1panel
+mkdir -p "${PANEL_CONF_DIR}/db"
 
 # Install binaries
 log_info "Installing binaries to ${INSTALL_DIR}/..."
@@ -83,16 +86,27 @@ echo "${PANEL_EDITION}" > "${PANEL_CONF_DIR}/.selected_edition"
 # Set ownership
 chown -R "${PANEL_USER}:${PANEL_GROUP}" "${PANEL_CONF_DIR}"
 
-# Create minimal config if not exists
+# Create config if not exists
+mkdir -p "${PANEL_CONF_DIR}/conf"
 if [[ ! -f "${PANEL_CONF_DIR}/conf/app.yaml" ]]; then
     cat > "${PANEL_CONF_DIR}/conf/app.yaml" << 'YAML'
-server:
-  http_port: 9999
-  https_port: 9998
-  log_level: info
-  app_data_dir: /opt/1panel
-database:
-  type: sqlite
+base:
+  install_dir: /opt
+  mode: dev
+  port: 9999
+  username: admin
+  password: admin123
+  version: v2.0.0
+  is_demo: false
+  is_offline: false
+  is_fxplay: false
+  is_enterprise: false
+log:
+  level: debug
+  time_zone: Asia/Shanghai
+  log_name: 1Panel-Core
+  log_suffix: .log
+  max_backup: 10
 YAML
     chown "${PANEL_USER}:${PANEL_GROUP}" "${PANEL_CONF_DIR}/conf/app.yaml"
 fi
