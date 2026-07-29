@@ -90,7 +90,7 @@ func (a AgentService) ListSkills(req dto.AgentIDReq) ([]dto.AgentSkillItem, erro
 
 func (a AgentService) SearchSkills(req dto.AgentSkillSearchReq) ([]dto.AgentSkillSearchItem, error) {
 	if req.Source == localSkillHubSource {
-		return nil, fmt.Errorf("local skills hub is provided by enterprise edition")
+		return nil, fmt.Errorf("local skills hub is provided by OSS edition")
 	}
 	if global.CONF.Base.IsOffline {
 		return nil, fmt.Errorf("offline environment cannot access remote Skills Hub")

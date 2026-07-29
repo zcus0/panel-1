@@ -1,4 +1,4 @@
-# 基础错误
+﻿# 基础错误
 ErrInvalidParams: "参数错误: {{ .detail }}"
 ErrMcpGatewayArgsParse: "MCP 自定义参数格式错误"
 ErrMcpGatewayArgsConflict: "参数 {{ .name }} 由 1Panel 管理，不能在自定义参数中设置"
@@ -88,7 +88,7 @@ ErrAgentApiKeyRequired: "API Key 不能为空"
 ErrAgentComposeRequired: "自定义编排内容不能为空"
 ErrAgentIDRequired: "智能体 ID 不能为空"
 ErrAgentAccountIDRequired: "账号 ID 不能为空"
-ErrAgentLimitReached: "社区版最多支持创建 {{ .max }} 个智能体，升级至商业版无数量限制"
+ErrAgentLimitReached: "OSS 版最多支持创建 {{ .max }} 个智能体，升级至OSS 版无数量限制"
 ErrAgentWebsiteBound: "该智能体已关联网站"
 ErrAgentWebsiteTypeUnsupported: "只能关联反向代理或静态网站"
 ErrAgentWebsiteInUse: "该网站已被其他智能体关联"

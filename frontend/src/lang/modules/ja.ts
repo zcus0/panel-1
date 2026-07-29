@@ -3141,7 +3141,7 @@ const message = {
         offLine: 'オフライン版',
         community: '無料',
         oss: '無料',
-        ee: 'Enterprise Edition',
+        ee: 'OSS Edition',
         pro: '専門',
         trial: '体験',
         add: 'コミュニティ版を追加',
@@ -3178,7 +3178,7 @@ const message = {
         licenseRequiredShortTip:
             'まずデバイス ID をコピーしてライセンスを取得し、ライセンスをインポートするとログインできます。',
         licenseRequiredUserTip:
-            'Enterprise Edition のライセンスがバインドされていません。スーパー管理者に連絡してライセンスをインポートしてください。',
+            'OSS Edition のライセンスがバインドされていません。スーパー管理者に連絡してライセンスをインポートしてください。',
         technicalAdvice: '技術的な相談',
         advice: '相談',
         levelUpPro: '商用版にアップグレード',
@@ -4335,9 +4335,9 @@ const message = {
             },
         },
         expiresEnterpriseAlert:
-            'ご注意: あなたのEnterprise Editionライセンスは{0}日後に終了し、すべてのEnterprise Edition機能が使用できなくなります。継続的な使用のために速やかに更新してください。',
+            'ご注意: あなたのOSS Editionライセンスは{0}日後に終了し、すべてのOSS Edition機能が使用できなくなります。継続的な使用のために速やかに更新してください。',
         expiresProAlert:
-            'ご注意: あなたのPro Editionライセンスは{0}日後に終了し、すべてのPro Edition機能が使用できなくなります。継続的な使用のために速やかに更新してください。',
+            'ご注意: あなたのOSS Editionライセンスは{0}日後に終了し、すべてのOSS Edition機能が使用できなくなります。継続的な使用のために速やかに更新してください。',
         menu: 'Рro',
         upage: 'AIウェブサイトビルダー',
         proAlert: 'この機能を使用するには商用版にアップグレードしてください',

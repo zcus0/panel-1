@@ -1,4 +1,4 @@
-# 基礎錯誤
+﻿# 基礎錯誤
 ErrInvalidParams: '請求參數錯誤: {{ .detail }}'
 ErrMcpGatewayArgsParse: 'MCP 自訂參數格式錯誤'
 ErrMcpGatewayArgsConflict: '參數 {{ .name }} 由 1Panel 管理，不能在自訂參數中設定'
@@ -88,7 +88,7 @@ ErrAgentApiKeyRequired: 'API Key 不可為空，請重試'
 ErrAgentComposeRequired: '自訂編排內容不可為空，請重試'
 ErrAgentIDRequired: '智能體 ID 不可為空，請重試'
 ErrAgentAccountIDRequired: '帳號 ID 不可為空，請重試'
-ErrAgentLimitReached: '社群版最多支援建立 {{ .max }} 個 AI 智能體，升級至商業版即可無限制使用'
+ErrAgentLimitReached: '社群版最多支援建立 {{ .max }} 個 AI 智能體，升級至OSS 版即可無限制使用'
 ErrAgentWebsiteBound: '該智能體已關聯網站'
 ErrAgentWebsiteTypeUnsupported: '只能關聯反向代理或靜態網站'
 ErrAgentWebsiteInUse: '該網站已被其他智能體關聯'

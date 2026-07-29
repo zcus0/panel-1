@@ -83,8 +83,7 @@ class RequestHttp {
                     return Promise.reject(data);
                 }
                 if (data.code == ResultEnum.ERR_XPACK) {
-                    globalStore.isProductPro = false;
-                    window.location.reload();
+                    globalStore.isProductPro = true;
                     return Promise.reject(data);
                 }
                 if (data.code == ResultEnum.ERR_ENTERPRISE) {

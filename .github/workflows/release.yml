@@ -1,0 +1,101 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch: [amd64, arm64]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.23'
+
+      - name: Build Frontend
+        working-directory: frontend
+        run: |
+          npm install
+          npm run build:pro
+
+      - name: Build Core
+        working-directory: core
+        env:
+          GOOS: linux
+          GOARCH: ${{ matrix.arch }}
+        run: |
+          CGO_ENABLED=0 go build -trimpath -ldflags '-s -w' -o ../build/1panel-core ./cmd/server/main.go
+
+      - name: Build Agent
+        working-directory: agent
+        env:
+          GOOS: linux
+          GOARCH: ${{ matrix.arch }}
+        run: |
+          CGO_ENABLED=0 go build -trimpath -ldflags '-s -w' -o ../build/1panel-agent ./cmd/server/main.go
+
+      - name: Package
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/}
+          DIST="1panel-${VERSION}-linux-${matrix.arch}"
+          mkdir -p "${DIST}"
+
+          # Binaries
+          cp build/1panel-core "${DIST}/"
+          cp build/1panel-agent "${DIST}/"
+
+          # Frontend assets
+          cp -r core/cmd/server/web "${DIST}/web"
+
+          # Install script
+          cp scripts/install.sh "${DIST}/install.sh"
+          chmod +x "${DIST}/install.sh"
+
+          # Edition file
+          echo "oss" > "${DIST}/.selected_edition"
+
+          # Tar
+          tar czf "${DIST}.tar.gz" "${DIST}"
+
+          # Checksum
+          sha256sum "${DIST}.tar.gz" > "${DIST}.tar.gz.sha256"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-${{ matrix.arch }}
+          path: |
+            1panel-*.tar.gz
+            1panel-*.sha256
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download All Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts
+          merge-multiple: true
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: artifacts/*.tar.gz
+          generate_release_notes: true
+          draft: false
+          prerelease: false

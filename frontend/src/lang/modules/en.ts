@@ -2165,7 +2165,7 @@ const message = {
         clam: {
             clam: 'Virus scan',
             cron: 'Scheduled scan',
-            cronHelper: 'Commercial Edition supports scheduled scans',
+            cronHelper: 'OSS Edition supports scheduled scans',
             specErr: 'Execution schedule format error, please check and retry!',
             disableMsg:
                 'Stopping scheduled execution will prevent this scan task from running automatically. Continue?',
@@ -2200,7 +2200,7 @@ const message = {
             clamLog: '@:toolbox.clam.clamConf logs',
             freshClam: 'FreshClam',
             freshClamLog: '@:toolbox.clam.freshClam logs',
-            alertHelper: 'Commercial Edition supports scheduled scans and SMS alerts',
+            alertHelper: 'OSS Edition supports scheduled scans and SMS alerts',
             alertTitle: 'Virus scan task 「{0}」 detected infected file alert',
         },
     },
@@ -2731,13 +2731,13 @@ const message = {
             'The address will be used for application redirection, container access, and other functions. Each node can be configured with a different address.',
         proxy: 'Server proxy',
         proxyHelper: 'It will be effective in the following scenarios after you set up the proxy server:',
-        proxyHelper1: 'Installation package downloads and App Store sync (Commercial Edition only)',
-        proxyHelper2: 'System updates and update checks (Commercial Edition only)',
+        proxyHelper1: 'Installation package downloads and App Store sync',
+        proxyHelper2: 'System updates and update checks',
         proxyHelper3: 'System license verification and synchronization',
         proxyHelper4:
-            'Network requests such as Docker image pulls go through the proxy server (Commercial Edition only)',
-        proxyHelper5: 'Unified download and sync for system script libraries (Commercial Edition)',
-        proxyHelper6: 'Certificate requests (Commercial Edition)',
+            'Network requests such as Docker image pulls go through the proxy server',
+        proxyHelper5: 'Unified download and sync for system script libraries',
+        proxyHelper6: 'Certificate requests',
         proxyType: 'Proxy type',
         proxyUrl: 'Proxy Address',
         proxyPort: 'Proxy Port',
@@ -3135,14 +3135,14 @@ const message = {
         offLine: 'Offline',
         community: 'OSS',
         oss: 'Open Source Software',
-        ee: 'Enterprise Edition',
+        ee: 'OSS Edition',
         pro: 'Pro',
         trial: 'Trial',
-        add: 'Add Community Edition',
+        add: 'Add Node',
         licenseBindHelper: 'Free node quotas can only be used when the license is bound to a node',
         licenseAlert:
-            'Community Edition nodes can only be added when the license is properly bound to a node. Only nodes properly bound to the license support switching.',
-        licenseUnbindHelper: 'Community Edition nodes detected for this license. Please unbind and try again!',
+            'Nodes can only be added when the license is properly bound to a node. Only nodes properly bound to the license support switching.',
+        licenseUnbindHelper: 'Nodes detected for this license. Please unbind and try again!',
         subscription: 'Subscription',
         perpetual: 'Perpetual',
         product: 'Product',
@@ -3155,13 +3155,13 @@ const message = {
         authorizationId: 'Subscription ID',
         authorizedUser: 'Authorized user',
         lostHelper:
-            'The license has reached the retry limit. Click Sync manually to make sure Commercial Edition features continue to work.',
+            'The license has reached the retry limit. Click Sync manually to make sure features continue to work.',
         exceptionalHelper:
-            'License sync verification failed. Click Sync manually to make sure Commercial Edition features work properly. Detail: ',
+            'License sync verification failed. Click Sync manually to make sure features work properly. Detail: ',
         quickUpdate: 'Quick update',
         import: 'Import',
         power: 'Authorize',
-        unbindHelper: 'All Commercial Edition related settings will be cleaned after unbinding. Continue? ',
+        unbindHelper: 'All license related settings will be cleaned after unbinding. Continue? ',
         importLicense: 'Import license',
         securityWarningTitle: 'Do not use cracked licenses or licenses from unknown sources.',
         securityWarningContent:
@@ -3172,8 +3172,8 @@ const message = {
         licenseRequiredShortTip:
             'Please copy the device ID first to obtain a license. You can log in after importing the license.',
         licenseRequiredUserTip:
-            'The Enterprise Edition license is not bound. Contact a super administrator to import the license.',
-        levelUpPro: 'Upgrade to Commercial Edition',
+            'The OSS Edition license is not bound. Contact a super administrator to import the license.',
+        levelUpPro: 'OSS Edition',
         licenseSync: 'License Sync',
         knowMorePro: 'Learn More',
         closeAlert: 'The current page can be closed in the panel settings',
@@ -3187,23 +3187,23 @@ const message = {
         count: 'License count',
         serialNo: 'Serial number',
         remark: 'Remark',
-        waf: 'Upgrade to Commercial Edition to unlock interception maps, logs, block records, geo-blocking, custom rules, custom block pages, and more.',
-        tamper: 'Upgrade to Commercial Edition to protect websites from unauthorized changes or tampering.',
+        waf: 'Unlock interception maps, logs, block records, geo-blocking, custom rules, custom block pages, and more.'
+        tamper: 'Protect websites from unauthorized changes or tampering.'
         tamperHelper: 'Operation failed, the file or folder has tamper protection enabled. Please check and try again!',
-        setting: 'Upgrade to Commercial Edition to customize the panel logo, welcome message, and more.',
+        setting: 'Customize the panel logo, welcome message, and more.'
         monitor:
-            'Upgrade to Commercial Edition to view real-time website status, visitor trends, traffic sources, request logs, and more.',
-        alert: 'Upgrade to Commercial Edition to receive SMS alerts, review alert logs, and stay on top of key events.',
-        node: 'Upgrade to Commercial Edition to manage multiple Linux servers in 1Panel.',
-        nodeApp: 'Upgrade to Commercial Edition to upgrade multi-node app versions without switching nodes manually.',
+            'View real-time website status, visitor trends, traffic sources, request logs, and more.'
+        alert: 'Receive SMS alerts, review alert logs, and stay on top of key events.'
+        node: 'Manage multiple Linux servers in 1Panel.'
+        nodeApp: 'Upgrade multi-node app versions without switching nodes manually.'
         nodeDashboard:
-            'Upgrade to Commercial Edition for centralized management of multi-node apps, websites, databases, and scheduled tasks.',
-        fileExchange: 'Upgrade to Commercial Edition to transfer files quickly between servers.',
-        app: 'Upgrade to Commercial Edition to view service details, anomaly monitoring, and more in the mobile app.',
-        cluster: 'Upgrade to Commercial Edition to manage MySQL/Postgres/Redis primary-replica clusters.',
-        vllm: 'Upgrade to Commercial Edition to manage vLLM services in 1Panel with centralized deployment, configuration, lifecycle operations, and task tracking.',
+            'Centralized management of multi-node apps, websites, databases, and scheduled tasks.'
+        fileExchange: 'Transfer files quickly between servers.'
+        app: 'View service details, anomaly monitoring, and more in the mobile app.'
+        cluster: 'Manage MySQL/Postgres/Redis primary-replica clusters.'
+        vllm: 'Manage vLLM services in 1Panel with centralized deployment, configuration, lifecycle operations, and task tracking.'
         'model-downloader':
-            'Upgrade to Commercial Edition to search, download, and manage local model files from HuggingFace, ModelScope, or compatible mirrors with centralized model directories and download tasks.',
+            'Search, download, and manage local model files from HuggingFace, ModelScope, or compatible mirrors with centralized model directories and download tasks.',
     },
     clean: {
         scan: 'Start scanning',
@@ -4316,12 +4316,12 @@ const message = {
             },
         },
         expiresEnterpriseAlert:
-            'Friendly reminder: Your Enterprise Edition license will expire in {0} days, and all Enterprise Edition features will no longer be accessible. Please renew promptly to ensure continued usage.',
+            'Friendly reminder: Your OSS Edition license will expire in {0} days. Please renew promptly to ensure continued usage.',
         expiresProAlert:
-            'Friendly reminder: Your Pro Edition license will expire in {0} days, and all Pro Edition features will no longer be accessible. Please renew promptly to ensure continued usage.',
+            'Friendly reminder: Your OSS Edition license will expire in {0} days. Please renew promptly to ensure continued usage.',
         menu: 'Pro',
         upage: 'AI Website Builder',
-        proAlert: 'Upgrade to Commercial Edition to use this feature',
+        proAlert: 'This feature is available in OSS Edition',
         opsReport: {
             name: 'Ops Report',
             overview: 'Overview',
@@ -5873,7 +5873,7 @@ const message = {
             alertCount: 'Alert Count',
             clamHelper: 'Trigger alert when scanning infected files',
             cronJobHelper: 'Trigger alert when task execution fails',
-            licenseHelper: 'Commercial Edition supports additional alert channels',
+            licenseHelper: 'OSS Edition supports additional alert channels',
             alertCountHelper: 'Maximum daily alarm frequency',
             alert: 'SMS Alert',
             logs: 'Alert Logs',
@@ -6082,7 +6082,7 @@ const message = {
             feiShuConfigHelper: 'Feishu alert notification configuration',
             webhookName: 'Bot name',
             webhookUrl: 'Webhook URL',
-            alertConfigProHelper: 'Commercial Edition also supports WeCom, DingTalk, Feishu, and SMS alerts.',
+            alertConfigProHelper: 'OSS Edition also supports WeCom, DingTalk, Feishu, and SMS alerts.',
             recipientPlaceholder: 'Please enter recipient email address',
             addRecipient: 'Add Recipient',
             webhookItem: 'Webhook',

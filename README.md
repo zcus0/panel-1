@@ -81,22 +81,22 @@ Run `1pctl user-info` via SSH if you need to retrieve your access credentials.
 
 ![1Panel UI](https://resource.1panel.pro/img/overview_en_v2.png)
 
-## Pro Edition
+## OSS Edition
 
-1Panel OSS is free forever. Pro adds features built for teams and production workloads:
+1Panel OSS is free forever with all features included:
 
-| Feature | OSS | Pro |
-|---------|:---:|:---:|
-| One-click app installs | ✅ | ✅ |
-| AI agents (OpenClaw) | 1 agent | Unlimited |
-| WAF & advanced security | Basic | ✅ |
-| Website tamper protection | ❌ | ✅ |
-| Website uptime monitoring | ❌ | ✅ |
-| Multi-node management | ❌ | ✅ |
-| Custom logo & theme | ❌ | ✅ |
-| Priority support | ❌ | ✅ |
+| Feature | OSS |
+|---------|:---:|
+| One-click app installs | ✅ |
+| AI agents (OpenClaw) | ✅ |
+| WAF & advanced security | ✅ |
+| Website tamper protection | ✅ |
+| Website uptime monitoring | ✅ |
+| Multi-node management | ✅ |
+| Custom logo & theme | ✅ |
+| Priority support | ✅ |
 
-**From $80/year.** [Compare plans & start 30-day free trial →](https://1panel.pro/pricing)
+[Learn more →](https://1panel.pro)
 
 ## Star History
 

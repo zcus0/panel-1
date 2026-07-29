@@ -3109,7 +3109,7 @@ const message = {
             '아직 라이선스를 가져오지 않았습니다. 장치 ID를 복사해 라이선스를 받은 뒤 가져와야 로그인할 수 있습니다.',
         licenseRequiredShortTip: '먼저 장치 ID를 복사해 라이선스를 받은 뒤, 라이선스를 가져오면 로그인할 수 있습니다.',
         licenseRequiredUserTip:
-            'Enterprise Edition 라이선스가 바인딩되지 않았습니다. 슈퍼 관리자에게 라이선스 가져오기를 요청하세요.',
+            'OSS Edition 라이선스가 바인딩되지 않았습니다. 슈퍼 관리자에게 라이선스 가져오기를 요청하세요.',
         technicalAdvice: '기술 상담',
         advice: '상담',
         levelUpPro: '상용 버전으로 업그레이드',
@@ -4246,9 +4246,9 @@ const message = {
             },
         },
         expiresEnterpriseAlert:
-            '친절한 알림: 귀하의 Enterprise Edition 라이선스가 {0}일 후 만료되며, 모든 Enterprise Edition 기능에 더 이상 접근할 수 없습니다. 지속적인 사용을 위해 신속하게 갱신하시기 바랍니다.',
+            '친절한 알림: 귀하의 OSS Edition 라이선스가 {0}일 후 만료되며, 모든 OSS Edition 기능에 더 이상 접근할 수 없습니다. 지속적인 사용을 위해 신속하게 갱신하시기 바랍니다.',
         expiresProAlert:
-            '친절한 알림: 귀하의 Pro Edition 라이선스가 {0}일 후 만료되며, 모든 Pro Edition 기능에 더 이상 접근할 수 없습니다. 지속적인 사용을 위해 신속하게 갱신하시기 바랍니다.',
+            '친절한 알림: 귀하의 OSS Edition 라이선스가 {0}일 후 만료되며, 모든 OSS Edition 기능에 더 이상 접근할 수 없습니다. 지속적인 사용을 위해 신속하게 갱신하시기 바랍니다.',
         menu: 'Pro',
         upage: 'AI 웹사이트 빌더',
         proAlert: '이 기능을 사용하려면 상용 버전으로 업그레이드하세요',

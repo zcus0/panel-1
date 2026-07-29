@@ -3176,7 +3176,7 @@ const message = {
         offLine: 'Çevrimdışı Sürüm',
         community: 'OSS',
         oss: 'Açık Kaynak Yazılım',
-        ee: 'Enterprise Edition',
+        ee: 'OSS Edition',
         pro: 'Pro',
         trial: 'Deneme',
         add: 'Topluluk Sürümünü Ekle',
@@ -3216,7 +3216,7 @@ const message = {
         licenseRequiredShortTip:
             'Lütfen önce cihaz kimliğini kopyalayarak lisansı alın. Lisansı içe aktardıktan sonra giriş yapabilirsiniz.',
         licenseRequiredUserTip:
-            'Enterprise Edition lisansı bağlı değil. Lisansı içe aktarması için süper yöneticiyle iletişime geçin.',
+            'OSS Edition lisansı bağlı değil. Lisansı içe aktarması için süper yöneticiyle iletişime geçin.',
         levelUpPro: 'Ticari sürüme yükselt',
         licenseSync: 'Lisans Senkronizasyonu',
         knowMorePro: 'Daha Fazla Bilgi Edinin',
@@ -4386,9 +4386,9 @@ const message = {
             },
         },
         expiresEnterpriseAlert:
-            'Nazik hatırlatma: Enterprise Edition lisansınız {0} gün içinde sona erecek ve tüm Enterprise Edition özellikleri kullanılamaz hale gelecektir. Lütfen devam eden kullanım için zamanında yenileyin.',
+            'Nazik hatırlatma: OSS Edition lisansınız {0} gün içinde sona erecek ve tüm OSS Edition özellikleri kullanılamaz hale gelecektir. Lütfen devam eden kullanım için zamanında yenileyin.',
         expiresProAlert:
-            'Nazik hatırlatma: Pro Edition lisansınız {0} gün içinde sona erecek ve tüm Pro Edition özellikleri kullanılamaz hale gelecektir. Lütfen devam eden kullanım için zamanında yenileyin.',
+            'Nazik hatırlatma: OSS Edition lisansınız {0} gün içinde sona erecek ve tüm OSS Edition özellikleri kullanılamaz hale gelecektir. Lütfen devam eden kullanım için zamanında yenileyin.',
         menu: 'Pro',
         upage: 'AI Web Sitesi Oluşturucu',
         proAlert: 'Bu özelliği kullanmak için Ticari sürüme yükseltin',

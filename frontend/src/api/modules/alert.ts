@@ -9,7 +9,7 @@ const alertConfigHiddenTypes = ['sms'];
 const resolveAlertConfigExcludeTypes = (excludeTypes: string[] = []) => {
     const globalStore = GlobalStore();
     const types = new Set(excludeTypes);
-    if (globalStore.isIntl || globalStore.isEE || !globalStore.isProductPro) {
+    if (globalStore.isIntl) {
         alertConfigHiddenTypes.forEach((type) => types.add(type));
     }
     return Array.from(types);

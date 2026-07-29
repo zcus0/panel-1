@@ -63,9 +63,9 @@ curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_
 - [社區論壇](https://bbs.fit2cloud.com/c/1p/7)
 - [如何加入微信交流群?](https://bbs.fit2cloud.com/t/topic/2147)
 
-## 專業版
+## OSS 版
 
-相比於社區版，1Panel 專業版為使用者提供了大量增強功能及技術支援服務，增強功能包括 WAF 增強、網站防篡改、網站監控、GPU 監控、黑金主題及自訂介面等。 [點擊查看專業版詳細介紹](https://www.lxware.cn/1panel)。
+1Panel OSS 版免費開源，所有功能均已包含，包括 WAF 增強、網站防篡改、網站監控、GPU 監控、自訂介面等。 [了解更多](https://www.lxware.cn/1panel)。
 
 ## 飛致雲的其他明星項目
 

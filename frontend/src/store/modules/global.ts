@@ -65,9 +65,9 @@ const GlobalStore = defineStore('GlobalState', {
         isFxplay: false,
         isOffline: false,
         // license
-        isProductPro: false,
+        isProductPro: true,
         productProExpires: 0,
-        isMasterProductPro: false,
+        isMasterProductPro: true,
         isEnterpriseLicensed: false,
         isEnterpriseLicenseLoaded: false,
         // multi-node

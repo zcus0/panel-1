@@ -3234,7 +3234,7 @@ const message = {
         licenseRequiredShortTip:
             'Sila salin ID peranti terlebih dahulu untuk mendapatkan lesen. Anda boleh log masuk selepas mengimport lesen.',
         licenseRequiredUserTip:
-            'Lesen Enterprise Edition belum diikat. Hubungi pentadbir super untuk mengimport lesen.',
+            'Lesen OSS Edition belum diikat. Hubungi pentadbir super untuk mengimport lesen.',
         technicalAdvice: 'Konsultasi Teknikal',
         advice: 'Konsultasi',
         levelUpPro: 'Naik taraf ke Edisi Komersial',
@@ -4398,9 +4398,9 @@ const message = {
             },
         },
         expiresEnterpriseAlert:
-            'Peringatan mesra: Lesen Enterprise Edition anda akan tamat dalam {0} hari, dan semua ciri Enterprise Edition tidak lagi dapat diakses. Sila perbaharui segera untuk memastikan penggunaan berterusan.',
+            'Peringatan mesra: Lesen OSS Edition anda akan tamat dalam {0} hari, dan semua ciri OSS Edition tidak lagi dapat diakses. Sila perbaharui segera untuk memastikan penggunaan berterusan.',
         expiresProAlert:
-            'Peringatan mesra: Lesen Pro Edition anda akan tamat dalam {0} hari, dan semua ciri Pro Edition tidak lagi dapat diakses. Sila perbaharui segera untuk memastikan penggunaan berterusan.',
+            'Peringatan mesra: Lesen OSS Edition anda akan tamat dalam {0} hari, dan semua ciri OSS Edition tidak lagi dapat diakses. Sila perbaharui segera untuk memastikan penggunaan berterusan.',
         menu: 'Pro',
         upage: 'Pembina Laman Web AI',
         proAlert: 'Tingkatkan ke Edisi Komersial untuk menggunakan ciri ini',

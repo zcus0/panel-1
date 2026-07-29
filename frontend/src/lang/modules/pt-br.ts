@@ -3355,7 +3355,7 @@ const message = {
         licenseRequiredShortTip:
             'Copie primeiro o ID do dispositivo para obter a licença. Você poderá entrar depois de importá-la.',
         licenseRequiredUserTip:
-            'A licença Enterprise Edition não está vinculada. Entre em contato com o superadministrador para importar a licença.',
+            'A licença OSS Edition não está vinculada. Entre em contato com o superadministrador para importar a licença.',
         technicalAdvice: 'Consultoria técnica',
         advice: 'Consultoria',
         levelUpPro: 'Fazer upgrade para a edição comercial',
@@ -4538,9 +4538,9 @@ const message = {
             },
         },
         expiresEnterpriseAlert:
-            'Lembrete: Sua licença da Enterprise Edition expira em {0} dias. Depois disso, todos os recursos da Enterprise Edition deixarão de ficar disponíveis. Renove a licença para manter o uso contínuo.',
+            'Lembrete: Sua licença da OSS Edition expira em {0} dias. Depois disso, todos os recursos da OSS Edition deixarão de ficar disponíveis. Renove a licença para manter o uso contínuo.',
         expiresProAlert:
-            'Lembrete: Sua licença da Pro Edition expira em {0} dias. Depois disso, todos os recursos da Pro Edition deixarão de ficar disponíveis. Renove a licença para manter o uso contínuo.',
+            'Lembrete: Sua licença da OSS Edition expira em {0} dias. Depois disso, todos os recursos da OSS Edition deixarão de ficar disponíveis. Renove a licença para manter o uso contínuo.',
         menu: 'Pro',
         upage: 'Construtor de Sites com IA',
         proAlert: 'Atualize para comercial para usar este recurso',
