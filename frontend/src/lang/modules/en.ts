@@ -3187,21 +3187,21 @@ const message = {
         count: 'License count',
         serialNo: 'Serial number',
         remark: 'Remark',
-        waf: 'Unlock interception maps, logs, block records, geo-blocking, custom rules, custom block pages, and more.'
-        tamper: 'Protect websites from unauthorized changes or tampering.'
+        waf: 'Unlock interception maps, logs, block records, geo-blocking, custom rules, custom block pages, and more.',
+        tamper: 'Protect websites from unauthorized changes or tampering.',
         tamperHelper: 'Operation failed, the file or folder has tamper protection enabled. Please check and try again!',
-        setting: 'Customize the panel logo, welcome message, and more.'
+        setting: 'Customize the panel logo, welcome message, and more.',
         monitor:
-            'View real-time website status, visitor trends, traffic sources, request logs, and more.'
-        alert: 'Receive SMS alerts, review alert logs, and stay on top of key events.'
-        node: 'Manage multiple Linux servers in 1Panel.'
-        nodeApp: 'Upgrade multi-node app versions without switching nodes manually.'
+            'View real-time website status, visitor trends, traffic sources, request logs, and more.',
+        alert: 'Receive SMS alerts, review alert logs, and stay on top of key events.',
+        node: 'Manage multiple Linux servers in 1Panel.',
+        nodeApp: 'Upgrade multi-node app versions without switching nodes manually.',
         nodeDashboard:
-            'Centralized management of multi-node apps, websites, databases, and scheduled tasks.'
-        fileExchange: 'Transfer files quickly between servers.'
-        app: 'View service details, anomaly monitoring, and more in the mobile app.'
-        cluster: 'Manage MySQL/Postgres/Redis primary-replica clusters.'
-        vllm: 'Manage vLLM services in 1Panel with centralized deployment, configuration, lifecycle operations, and task tracking.'
+            'Centralized management of multi-node apps, websites, databases, and scheduled tasks.',
+        fileExchange: 'Transfer files quickly between servers.',
+        app: 'View service details, anomaly monitoring, and more in the mobile app.',
+        cluster: 'Manage MySQL/Postgres/Redis primary-replica clusters.',
+        vllm: 'Manage vLLM services in 1Panel with centralized deployment, configuration, lifecycle operations, and task tracking.',
         'model-downloader':
             'Search, download, and manage local model files from HuggingFace, ModelScope, or compatible mirrors with centralized model directories and download tasks.',
     },
